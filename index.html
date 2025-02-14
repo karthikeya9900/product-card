@@ -10,7 +10,7 @@
       }
       article {
         width: 1200px;
-        height: 600px;
+        height: 700px;
         background-color: beige;
         margin: 100px auto;
         border-bottom-right-radius: 30px;
@@ -19,14 +19,9 @@
         border-bottom-left-radius: 30px;
       }
 
-      figure {
-        width: 500px;
-        float: left;
-        margin: 35px 10px;
-      }
-
       h2 {
         padding: 20px;
+        text-align: center;
       }
 
       li {
@@ -34,27 +29,23 @@
         word-spacing: 3px;
       }
 
-      img {
-        width: 400px;
-        height: 200px;
-        margin: 30px 50px;
-        border: 2px solid black;
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-      }
       p {
+        width: 500px;
         text-align: center;
         font-size: 20px;
         font-weight: 500;
-        padding: 10px;
+        padding: 10px 50px;
         margin: 0px;
+      }
+
+      ul {
+        width: 500px;
       }
 
       .description-section {
         float: right;
-        width: 670px;
+        margin: 10px 10px;
+        width: 650px;
       }
 
       .price-tag {
@@ -64,9 +55,14 @@
         color: rgb(10, 88, 1);
       }
 
+      .embed-gallery {
+        width: 500px;
+        height: 500px;
+      }
       .button {
         width: 150px;
         height: 30px;
+        margin-top: 50px;
         background-color: black;
         color: white;
         font-size: 20px;
@@ -76,15 +72,15 @@
         border-bottom-left-radius: 20px;
         text-align: center;
       }
+      .specifications {
+        width: 600px;
+      }
     </style>
   </head>
   <body>
     <article>
-      <figure>
-        <img src="./assets/asus-rog-phone-9.jpg" alt="ASUS ROG PHONE 9" />
-        <img src="./assets/ASUS_ROG_pic1.jpeg" alt="ASUS ROG PHONE 9" />
-      </figure>
       <h2>ASUS ROG PHONE 9 PRO</h2>
+      <embed src="./src/gallery.html" type="text/html" class="embed-gallery" />
       <div class="description-section">
         <p>
           The ROG Phone 9 FE will be powered by the Snapdragon 8 Gen 3 SoC, boot
@@ -93,25 +89,27 @@
           refresh rate, reaching 185Hz in Game Genie.
         </p>
         <p class="price-tag">Price : Rs 79,999 (approximately)</p>
-        <ul>
-          <li>Design : Storm White</li>
-          <li>OS : Android 15</li>
-          <li>Weight and Dimension : 227g 163.8x77x8.9 mm</li>
-          <li>
-            Processer : Qualcomm® Snapdragon® 8 Elite Mobile Platform 4.3GHz,
-            64-bit, Octa-core Processor GPU: Qualcomm® Adreno™ 830
-          </li>
-          <li>Memory: LPDDR5X 16GB</li>
-          <li>Storage: UFS4.0 512GB</li>
-          <li>
-            Display: 6.78" FHD+ (2400x1080 pixels) SAMSUNG Flexible AMOLED LTPO
-            1~120Hz, Max to 165Hz in system setting / 185Hz in Game Genie
-          </li>
-          <li>
-            Battery:Equivalent 5,800 mAh (typical) high-capacity battery
-            Supports Quick Charge 5.0 and PD Charging
-          </li>
-        </ul>
+        <div class="specifications">
+          <ul>
+            <li>Design : Storm White</li>
+            <li>OS : Android 15</li>
+            <li>Weight and Dimension : 227g 163.8x77x8.9 mm</li>
+            <li>
+              Processer : Qualcomm® Snapdragon® 8 Elite Mobile Platform 4.3GHz,
+              64-bit, Octa-core Processor GPU: Qualcomm® Adreno™ 830
+            </li>
+            <li>Memory: LPDDR5X 16GB</li>
+            <li>Storage: UFS4.0 512GB</li>
+            <li>
+              Display: 6.78" FHD+ (2400x1080 pixels) SAMSUNG Flexible AMOLED
+              LTPO 1~120Hz, Max to 165Hz in system setting / 185Hz in Game Genie
+            </li>
+            <li>
+              Battery:Equivalent 5,800 mAh (typical) high-capacity battery
+              Supports Quick Charge 5.0 and PD Charging
+            </li>
+          </ul>
+        </div>
         <div class="button">Buy now</div>
       </div>
     </article>
